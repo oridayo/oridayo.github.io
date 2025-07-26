@@ -15,6 +15,6 @@ const router = createBrowserRouter([
     },
 ]);
 
-const AppRouter = () => <RouterProvider router={router} />;
+const BrowserRouter = () => <RouterProvider router={router} />;
 
-export default AppRouter;
+export default BrowserRouter;

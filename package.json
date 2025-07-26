@@ -2,11 +2,9 @@
   "name": "portfolio-react",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://oridayo.github.io/oridayo.github.io",
+  "homepage": "https://oridayo.github.io/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
