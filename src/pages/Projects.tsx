@@ -1,5 +1,3 @@
-import React from "react";
-
 const Projects = () => {
     return (
         <div id="projects" className="container m-auto py-5">
