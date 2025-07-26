@@ -22,7 +22,7 @@ const Home = () => {
                     >
                         <img
                             className="my-3 mx-auto d-block"
-                            src="public/IG_brand_asset_pack_2023/01 Static Glyph/02 White Glyph/Instagram_Glyph_White.png"
+                            src="../assets/IG_brand_asset_pack_2023/01 Static Glyph/02 White Glyph/Instagram_Glyph_White.png"
                             height="20"
                         />
                     </a>
@@ -31,7 +31,7 @@ const Home = () => {
                     <a target="_blank" href="https://x.com/ItzGujiiii">
                         <img
                             className="my-3 mx-auto d-block"
-                            src="public/x-logo/logo-white.png"
+                            src="../assets/x-logo/logo-white.png"
                             height="20"
                         />
                     </a>
@@ -43,7 +43,7 @@ const Home = () => {
                     >
                         <img
                             className="my-3 mx-auto d-block"
-                            src="public/linkedin-logos/LinkedIn-Logos/In/Digital/White/1x/In-White-26-Γö¼┬½.png"
+                            src="../assets/linkedin-logos/LinkedIn-Logos/In/Digital/White/1x/In-White-26-Γö¼┬½.png"
                             height="20"
                         />
                     </a>
