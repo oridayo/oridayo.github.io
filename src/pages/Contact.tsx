@@ -38,7 +38,7 @@ const Contact = () => {
                 "https://script.google.com/macros/s/AKfycbwIG39Rd3xq3Uwn72dyhflmT7YnDK2Vn3zvVmc-tvCHdIkUe-jqf7K9DBrDEpgAfXCY/exec";
 
             // Send POST request to Google Apps Script with form data
-            const response = await fetch(GOOGLE_SCRIPT_URL, {
+            await fetch(GOOGLE_SCRIPT_URL, {
                 method: "POST",
                 mode: "no-cors", // Required for Google Apps Script cross-origin requests
                 headers: {
