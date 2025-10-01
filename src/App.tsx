@@ -1,4 +1,5 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
+import "./App.css";
 
 function App() {
     return (
@@ -9,22 +10,34 @@ function App() {
                         <span className="navbar-brand flex-grow-1">Hello.</span>
                         <ul className="navbar-nav">
                             <li className="navbar-item">
-                                <Link to="/" className="nav-link {isActive}">
+                                <NavLink
+                                    to="/"
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="navbar-item">
-                                <Link to="/projects" className="nav-link">
+                                <NavLink
+                                    to="/projects"
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
+                                >
                                     Projects
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="navbar-item">
-                                <a
-                                    className="nav-link"
-                                    href="mailto:marcusmunyk@gmail.com"
+                                <NavLink
+                                    to="/contact"
+                                    className={({ isActive }) =>
+                                        isActive ? "nav-link active" : "nav-link"
+                                    }
                                 >
                                     Contact
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>

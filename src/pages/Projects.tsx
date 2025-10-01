@@ -14,7 +14,8 @@ const Projects = () => {
                         <td className="p-5">
                             <img
                                 className="img-fluid"
-                                src="../assets/portfolio_v1.png"
+                                src="./portfolio_v1.png"
+                                alt="Portfolio V1 Screenshot"
                             />
                         </td>
                         <td className="p-5">
@@ -30,7 +31,8 @@ const Projects = () => {
                         <td className="p-5">
                             <img
                                 className="img-fluid"
-                                src="../assets/fyp.png"
+                                src="./fyp.png"
+                                alt="Final Year Project Screenshot"
                             />
                         </td>
                         <td className="p-5">
@@ -49,7 +51,8 @@ const Projects = () => {
                         <td className="p-5">
                             <img
                                 className="img-fluid"
-                                src="../assets/dagkea.png"
+                                src="./dagkea.png"
+                                alt="DAGKEA IKEA Clone Screenshot"
                             />
                         </td>
                         <td className="p-5">
@@ -65,7 +68,8 @@ const Projects = () => {
                         <td className="p-5">
                             <img
                                 className="img-fluid"
-                                src="../assets/gujify.png"
+                                src="./gujify.png"
+                                alt="Gujify Spotify Clone Screenshot"
                             />
                         </td>
                         <td className="p-5">
@@ -81,7 +85,8 @@ const Projects = () => {
                         <td className="p-5">
                             <img
                                 className="img-fluid"
-                                src="../assets/dodge-the-discord.png"
+                                src="./dodge-the-discord.png"
+                                alt="Dodge the Discord Game Screenshot"
                             />
                         </td>
                         <td className="p-5">
