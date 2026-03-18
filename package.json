@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-react",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://oridayo.github.io",
+  "homepage": "https://orilabs.my",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
