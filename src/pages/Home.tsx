@@ -1,4 +1,34 @@
+import { useState, useEffect } from 'react';
+
 const Home = () => {
+    const [displayText, setDisplayText] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [nameIndex, setNameIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const names = ['Frontend Developer', 'Backend Developer', 'Cloud Engineer', 'Photographer'];
+
+    useEffect(() => {
+        const currentName = names[nameIndex];
+        const timeout = setTimeout(() => {
+            if (!isDeleting) {
+                setDisplayText(currentName.slice(0, currentIndex + 1));
+                setCurrentIndex(currentIndex + 1);
+                if (currentIndex + 1 === currentName.length) {
+                    setTimeout(() => setIsDeleting(true), 1000); // pause before deleting
+                }
+            } else {
+                setDisplayText(currentName.slice(0, currentIndex - 1));
+                setCurrentIndex(currentIndex - 1);
+                if (currentIndex - 1 === 0) {
+                    setIsDeleting(false);
+                    setNameIndex((nameIndex + 1) % names.length);
+                }
+            }
+        }, isDeleting ? 50 : 100); // faster deleting
+
+        return () => clearTimeout(timeout);
+    }, [currentIndex, isDeleting, nameIndex]);
+
     return (
         <div className="container m-auto py-2">
             <div className="hero-section">
@@ -8,9 +38,9 @@ const Home = () => {
                     className="profile-image"
                 />
                 <div className="hero-content">
-                    <h1 className="hero-title">Marcus Mun aka Ori</h1>
+                    <h1 className="hero-title">Hello, I am Marcus</h1>
                     <p className="hero-subtitle">
-                        Full-Stack Developer | Kuala Lumpur, Malaysia
+                        {displayText} <span className="cursor">|</span>
                     </p>
                 </div>
             </div>
@@ -18,15 +48,14 @@ const Home = () => {
             <div className="about-section section-spacing">
                 <h2 className="mb-3">About Me</h2>
                 <p className="lead">
-                    Hi, I'm Marcus, a passionate full-stack developer based in
+                    Hi, I'm Marcus, a passionate developer based in
                     Kuala Lumpur, Malaysia. As a fresh graduate, I'm eager to
-                    apply my skills in modern web technologies and contribute to
+                    apply my skills in modern technologies and contribute to
                     innovative projects. This portfolio showcases some of the
-                    work I've been developing throughout my university journey.
+                    work I've been developing throughout my journey.
                 </p>
                 <p>
-                    I specialize in React, TypeScript, and modern web
-                    development, always excited to learn new technologies and
+                    I specialize in React, Python, Flutter, Azure, and am always excited to learn new technologies and
                     take on challenging projects.
                 </p>
             </div>
@@ -38,7 +67,7 @@ const Home = () => {
                     <div>
                         <a
                             target="_blank"
-                            href="https://www.instagram.com/marcus.munn"
+                            href="https://www.instagram.com/guji.sama"
                         >
                             <img
                                 className="my-3 mx-auto d-block social-icon"
@@ -49,11 +78,11 @@ const Home = () => {
                         </a>
                     </div>
                     <div>
-                        <a target="_blank" href="https://x.com/ItzGujiiii">
+                        <a target="_blank" href="https://github.com/oridayo">
                             <img
                                 className="my-3 mx-auto d-block social-icon"
-                                src="./x-logo/logo-white.png"
-                                alt="X (Twitter)"
+                                src=".\GitHub Logos\PNG\GitHub_Invertocat_White.png"
+                                alt="GitHub"
                                 height="32"
                             />
                         </a>
