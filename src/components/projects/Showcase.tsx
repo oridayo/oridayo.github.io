@@ -66,7 +66,7 @@ const Showcase = () => {
         },
         {
             id: 7,
-            title: "InfinityWorld - 2024",
+            title: "InfinityWorld - 2025",
             desc: "A website that provides a comprehensive analytics for user to understand their new business location well. It provides information such as foot traffic, demographics, and nearby competitors. Part of a team project for Innojam Hackathon 2025.",
             linkname: "Github",
             link: "https://github.com/lohkaixuan/InfinityWorld",
@@ -81,6 +81,15 @@ const Showcase = () => {
             link: "",
             img: "./project8.png",
             genre: ["Python", "REST API", "Custom API Wrapper"],
+        },
+        {
+            id: 9,
+            title: "UniPay - 2026",
+            desc: "A one stop payment solution that focuses on AI services to better prevent fraud and scams from happening. The main focus for our team is the AI service that prevents fraud in the first layer of transactions. Part of a team project for TNG Digital FinHack 2026.",
+            linkname: "Github",
+            link: "https://github.com/lohkaixuan/TNGFinHack",
+            img: "./project9.png",
+            genre: ["React", ".NET", "Alibaba Cloud", "AWS Bedrock"],
         }
     ];
 

@@ -55,7 +55,7 @@ const Home = () => {
                     work I've been developing throughout my journey.
                 </p>
                 <p>
-                    I specialize in React, Python, Flutter, Azure, and am always excited to learn new technologies and
+                    I specialize in .NET, React, Python, Azure, and am always excited to learn new technologies and
                     take on challenging projects.
                 </p>
             </div>
